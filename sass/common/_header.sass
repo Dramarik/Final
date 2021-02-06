@@ -1,0 +1,81 @@
+.contacts
+    background: #262829
+    min-height: rem(40px)
+    font-size: rem(12px)
+    +flex(center, center)
+    text-align: center
+
+
+    +phone
+        .container
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+
+
+
+
+.contacts__text
+    color: $textLight
+    margin: 0
+    line-height: rem(20px)
+    +phone
+        line-height: rem(40px)
+        &:first-child
+            padding-right: rem(30px)
+            border-right: 1px solid #4e4e4e
+    +tablet 
+    // ????
+
+.contacts__link
+    color: #686c6e
+    text-transform: uppercase
+    text-decoration: none   
+
+
+.navigation
+    background: $secondColor 
+    .container
+        +flex(space-between, center)
+
+        +tablet 
+            display: grid
+            grid-template-columns: 45% 55%
+
+.logo
+    padding: rem(27px) 0
+
+.nav 
+    +pos-overlay(rgba(#00a6d3, 0.7))
+    +flex(center, center, $dir: column)
+    top: -100%
+    height: 100vh
+    bottom: auto
+    transition: .5s
+
+    +tablet 
+        position: unset
+        background: unset
+        height: auto
+        +flex(space-between, center, $dir: row)
+    &.is-active
+        top: 0
+
+    &__link
+        color: white
+        text-decoration: none
+        margin: rem(10px) 0
+        text-transform: uppercase
+        font-size: rem(14px)
+
+        +tablet 
+            color: #262829
+
+
+    .nav__link--active
+        color: #262829
+    .nav__link::active
+        color: red
+
+.hamburger
+    +tablet
+        display: none
