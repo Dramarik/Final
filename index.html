@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final_Project</title>
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -14,7 +16,7 @@
             <div class="contacts">
                 <div class="container">
                     <p class="contacts__text">Email: <a href="#" class="contacts__link">info@somedomain.com</a></p>
-                    <p class="contacts__text">Email: <a href="#" class="contacts__link">+91 5685 6664 555</a></p>
+                    <p class="contacts__text">Phone: <a href="#" class="contacts__link">+91 5685 6664 555</a></p>
                 </div>
             </div>
 
@@ -32,7 +34,7 @@
                         <a href="#" class="nav__link">Pages</a>
                         <a href="#" class="nav__link">Contact us</a>
                     </nav>
-                    <button class="hamburger hamburger--spin" type="button">
+                    <button class="hamburger hamburger--spin" type="button" style="z-index: 3000;">
                         <span class="hamburger-box">
                             <span class="hamburger-inner"></span>
                         </span>
@@ -40,11 +42,82 @@
                 </div>
             </div>
 
-            <section class="header__slider">
-                
-            </section>
+
+            <div class="slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="slider-img" src="img/slider01.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slider-img" src="img/slider02.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slider-img" src="img/slider03.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slider-img" src="img/slider04.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slider-img" src="img/slider05.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <div class="swiper-scrollbar"></div>
+                </div>
 
 
+                <div class="thumb">
+                    <div class="thumb__title">
+                        <h3 class="thumb__title__item">We are leading consulting company</h3>
+                        <h2 class="thumb__title__item-2">Choose your industry</h2>
+                    </div>
+                    <div class="thumb__slider swiper-container-thumbs">
+                        <div class="thumb__list swiper-wrapper">
+                            <div class="thumb__item swiper-slide">
+                                <span class="icon-bank main-icon"></span>
+                                <div class="thumb__item__inner">
+                                    <h4 class="thumb__heading">Education</h4>
+                                    <span class="icon-circle-right"></span>
+                                </div>
+                            </div>
+                            <div class="thumb__item swiper-slide">
+                                <span class="icon-briefcase main-icon"></span>
+                                <div class="thumb__item__inner">
+                                    <h4 class="thumb__heading">Business</h4>
+                                    <span class="icon-circle-right"></span>
+                                </div>
+                            </div>
+                            <div class="thumb__item swiper-slide">
+                                <span class="icon-laptop main-icon"></span>
+                                <div class="thumb__item__inner">
+                                    <h4 class="thumb__heading">Technology</h4>
+                                    <span class="icon-circle-right"></span>
+                                </div>
+                            </div>
+                            <div class="thumb__item swiper-slide">
+                                <span class="icon-credit-card main-icon"></span>
+                                <div class="thumb__item__inner">
+                                    <h4 class="thumb__heading">Banking</h4>
+                                    <span class="icon-circle-right"></span>
+                                </div>
+                            </div>
+                            <div class="thumb__item swiper-slide">
+                                <span class="icon-home main-icon"></span>
+                                <div class="thumb__item__inner">
+                                    <h4 class="thumb__heading">Real Estate</h4>
+                                    <span class="icon-circle-right"></span>
+                                </div>
+                            </div>
+                            <div class="swiper__btn"><button class="swiper__btn__item">View more</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -52,9 +125,81 @@
 
         </header>
 
-        
+
+        <div class="container container--info">
+            <div class="info">
+                <p class="info__title1">WHAT WE ARE</p>
+                <h1 class="info__title2">ABOUT US</h1>
+                <p class="info__text">
+                    Business consultants are generally involved work in areas such as marketing, human resources,
+                    management, finance and accounting. Business consultants are responsible for improving companies'
+                    operations by assessing weaknesses and recommending business solutions.
+
+                </p>
+                <div class="info__btn">
+                    <button class="info__btn__item">
+                        <span>READ MORE</span>
+
+                    </button>
+                </div>
+            </div>
+            <pic class="pic">
+                <img src="img/info.jpg" alt="" class="pic__img">
+
+                <div class="pic__overlay">
+                    <div class="pic__overlay__inner">
+                        <img class="poster__icon" src="img/icons/badge_icon.png" alt="">
+                        <p class="poster__num">25</p>
+                        <p class="poster__text">Year of excellence </p>
+                    </div>
+                </div>
+            </pic>
+        </div>
+
+        <div class="steps">
+            <div class="container">
+                <span class="steps-title-p">our</span>
+                <h1 class="steps-title-h">Steps</h1>
+                <div class="steps__grid">
+                    <div class="step1">
+                        <img src="./img/icons/icon_01.png" alt="">
+                        <h1 class="step-header">
+                            <span class="steps-num">01</span>Choose your industry
+                        </h1>
+                        <p class="step-p">First, let’s define the term consulting.Consulting is “the business of giving
+                            expert
+                            advice to people working in a professional or technical field.” For example, I’ve spent over
+                            21
+                            years being a consultant.</p>
+                    </div>
+                    <div class="step2">
+                        <img src="./img/icons/icon_02.png" alt="">
+                        <h1 class="step-header">
+                            <span class="steps-num">02</span>Choose your service
+                        </h1>
+                        <p class="step-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam fugit,
+                            delectus
+                            explicabo error, vero sunt natus ea, ipsa reiciendis dolor deleniti facere!</p>
+
+                    </div>
+                    <div class="step3">
+                        <img src="./img/icons/icon_03.png" alt="">
+                        <h1 class="step-header">
+                            <span class="steps-num">03</span>Boost your business
+                        </h1>
+                        <p class="step-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum pariatur eveniet
+                            cumque
+                            rerum eius nam mollitia porro at doloribus ipsam!</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
     </div>
 
+    <script src="js/main.js"></script>
 
     <script>
         var hamburger = document.querySelector(".hamburger");

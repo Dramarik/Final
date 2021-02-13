@@ -1,0 +1,78 @@
+.footer 
+    background-color: #262829
+    min-height: 32.8125rem
+    color: #8c8385
+    +flex(null,center)
+
+// .bothside
+//     +flex(space-between,center)
+
+.footer-title
+    font-size: 15px
+    font-family: $domine-font
+    
+
+.footer-p
+    color: white
+    font-size: 20px
+    font-weight: 700
+
+.left-footer
+    position: relative
+
+.footer__button
+    float: right
+    color: white
+    background-color: #16d428
+    border: none
+    border-radius: rem(50px)
+    width: rem(155px)
+    height: rem(55px)
+    text-transform: uppercase
+    position: absolute
+    z-index: 1
+    right: rem(750px)
+
+.footer-input
+    text-transform: uppercase
+    width: rem(515px)
+    height: rem(55px)
+    border-radius: 50px
+    background-color: #323334
+    border: none
+    
+
+.right-footer
+    +tablet
+        .container--footer
+            display: grid
+            grid-template-columns: 50% 50%
+            gap: 2rem
+    +flex(space-between,center)
+    position: absolute
+
+
+
++tablet
+    .container--footer
+        display: grid
+        grid-template-columns: 60% 40%
+        gap: 2rem
+
+
+
+
+.footer-nav
+    list-style: none
+    position: absolute
+
+
+.footer-nav__item a
+    font-size: rem(13px)
+    text-decoration: none
+    margin: 18px 18px
+    color: #8c8385
+    &:hover
+        color: white
+
+

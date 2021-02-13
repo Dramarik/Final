@@ -1,0 +1,212 @@
+
+.slider
+    position: relative
+
+.slider-img
+    width: 100%
+    height: rem(700px)
+    object-fit: cover
+
+.swiper-container
+    // overflow: hidden
+
+.thumb
+    // display: none
+    position: absolute
+    left: 0
+    bottom: 0.7%
+    z-index: 2
+    gap: 0
+    color: $textLight
+
+.thumb__title
+    background: $secondColor
+    width: 100%
+    height: rem(115px)/3
+    text-transform: uppercase
+    border: rem(1px)/3 solid $secondColor
+    transition: 0.5s
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    &__item
+        font-size: rem(14px)/3
+        margin: 0
+        margin-bottom: 1em
+            
+    &__item-2
+        font-size: rem(30px)/3
+        font-weight: 300
+        margin: 0
+.thumb__list
+    display: flex
+    flex-direction: column
+    width: rem(460px)/3
+    // height: rem(525px)/3
+    text-align: center
+
+.thumb__item, .swiper__btn
+    min-width: 100%
+    // min-width: rem(228px)/3
+    height: rem(130px)/3
+    background: $mainColor
+    border: rem(1px)/3 solid #00a6d3
+    cursor: pointer
+    display: flex
+    flex-direction: column
+    justify-content: center
+    font-size: rem(14px)/3
+    font-weight: normal
+    text-transform: uppercase
+    span
+        font-family: 'icomoon'
+    .thumb__heading
+        font-weight: 400
+    
+    .icon-circle-right
+        font-size: rem(26px)/3
+
+    &__inner
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        padding: 0 15%
+.main-icon
+    font-size: rem(30px)/3
+    text-align: left
+    padding-left: 15%
+
+.swiper__btn__item
+    font-family: $font
+    font-size: rem(14px)/3
+    padding: rem(20px)/3 rem(30px)/3
+    border: none
+    border-radius: rem(26px)/3
+    color: white
+    background: #16d428
+    margin: auto
+.swiper-slide-thumb-active
+    background: #00a6d3
+
++phone
+    .thumb
+        // display: none ///////
+        transition: 0.5s
+        width: rem(460px)/2
+        // height: rem(525px)/2
+        left: 15%
+        bottom: 0.7%
+        z-index: 2
+        gap: 0
+
+    .thumb__title
+        height: rem(115px)/2
+
+        &__item
+            font-size: rem(14px)/2
+        &__item-2
+            font-size: rem(30px)/2
+
+    .thumb__list
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        width: 14.5rem
+
+    .thumb__item, .swiper__btn
+        min-width: rem(228px)/2
+        height: rem(130px)/2
+        border: rem(1px) solid #00a6d3
+        font-size: rem(14px)/2
+
+        .icon-circle-right
+            font-size: rem(26px)/2
+
+    .swiper__btn__item
+        font-size: rem(14px)/2
+        padding: rem(20px)/2 rem(30px)/2
+        border-radius: rem(26px)/2
+
+    .main-icon
+        font-size: rem(30px)/2
+
+
++tablet
+    .thumb
+        // display: none ///////
+        transition: 0.5s
+        width: rem(460px)/1.5
+        // height: rem(525px)/1.5
+        left: 15%
+        bottom: 0.7%
+        z-index: 2
+        gap: 0
+
+    .thumb__title
+        height: rem(115px)/1.5
+
+        &__item
+            font-size: rem(14px)/1.5
+        &__item-2
+            font-size: rem(30px)/1.5
+    .thumb__list
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        width: 19.3rem
+
+
+    .thumb__item, .swiper__btn
+        min-width: rem(228px)/1.5
+        height: rem(130px)/1.5
+        border: rem(1px) solid #00a6d3
+        font-size: rem(14px)/1.5
+        .icon-circle-right
+            font-size: rem(26px)/1.5
+
+    .swiper__btn__item
+        font-size: rem(14px)/1.5
+        padding: rem(20px)/1.5 rem(30px)/1.5
+        border-radius: rem(26px)/1.5
+
+    .main-icon
+        font-size: rem(30px)/1.5
+
++laptop
+    .thumb
+        // display: none ///////
+        width: rem(460px)
+        // height: rem(525px)
+
+    .thumb__title
+        height: rem(115px)
+        text-align: center
+
+        &__item
+            font-size: rem(14px)
+        &__item-2
+            font-size: rem(30px)
+    .thumb__list
+        display: flex
+        flex-direction: row
+        width: rem(460px)
+        flex-wrap: wrap
+
+    .thumb__item, .swiper__btn
+        min-width: rem(228px)
+        height: rem(130px)
+        border: rem(1px) solid #00a6d3
+        font-size: rem(14px)
+        .icon-circle-right
+            font-size: rem(26px)
+
+    .swiper__btn__item
+        font-size: rem(14px)
+        padding: rem(20px) rem(30px)
+        border-radius: rem(26px)
+
+    .main-icon
+        font-size: rem(30px)

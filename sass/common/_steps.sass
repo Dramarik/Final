@@ -1,0 +1,51 @@
+.steps
+    background-color: #e7eff1
+    min-height: rem(500px)
+    color: #898e8f
+    margin-top: rem(95px)
+    padding-top: 4rem
+    +flex($cross: center)
+    .container
+        +flex(center,$dir:column)
+        width: 90%
+
+    
+.steps-num
+    color: #85e293
+    display: block
+    font-weight: 700
+    font-size: 20px
+
+
+.step-header
+    color: #343a3b
+    font-weight: 700
+    font-size: 18px
+
+
+.steps-title-p
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+
+
+.steps-title-h
+    margin-top: 0
+    color: #343a3b
+    font-size: 32px
+    font-weight: 700
+    text-transform: uppercase
+
++phone
+    .steps
+        padding-top: 10rem
+
+
++tablet
+    .steps
+        margin: 0
+        padding-top: 0
+    .steps__grid 
+        display: grid
+        grid-template-columns: repeat(3,1fr)
+        gap: 2rem

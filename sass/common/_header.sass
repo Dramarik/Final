@@ -2,14 +2,16 @@
     background: #262829
     min-height: rem(40px)
     font-size: rem(12px)
-    +flex(center, center)
+    // +flex(center, center)
     text-align: center
 
 
     +phone
         .container
-            display: grid
-            grid-template-columns: repeat(2, 1fr)
+            display: flex
+            flex-direction: row
+            justify-content: flex-end
+            align-items: center
 
 
 
@@ -23,8 +25,14 @@
         &:first-child
             padding-right: rem(30px)
             border-right: 1px solid #4e4e4e
+        &:last-child
+            padding-left: rem(30px)
+            padding-right: rem(30px)
     +tablet 
     // ????
+    +laptop
+        &:last-child
+            padding-right: 0
 
 .contacts__link
     color: #686c6e
@@ -33,7 +41,7 @@
 
 
 .navigation
-    background: $secondColor 
+    background: white
     .container
         +flex(space-between, center)
 
@@ -51,6 +59,9 @@
     height: 100vh
     bottom: auto
     transition: .5s
+    z-index: 3000
+    +use-font($font)
+
 
     +tablet 
         position: unset
@@ -72,7 +83,7 @@
 
 
     .nav__link--active
-        color: #262829
+        color: $secondColor
     .nav__link::active
         color: red
 
