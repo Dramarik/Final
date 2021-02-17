@@ -1525,4 +1525,234 @@ button.swiper-pagination-bullet {
   }
 }
 
+.about-company {
+  background: #03b6e7;
+  position: relative;
+}
+
+.carousel .container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.card {
+  padding: 0;
+  background: unset;
+  border: unset;
+}
+
+.card-div {
+  min-height: 32.5rem;
+}
+
+.testimonials__header {
+  margin-top: 10%;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #a6ecff;
+}
+
+.testimonials__header2 {
+  color: white;
+  font-size: 2rem;
+}
+
+.container {
+  position: relative;
+}
+
+.carousel-indicators {
+  padding-left: 0.9375rem;
+  padding-bottom: 0.625rem;
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+}
+.carousel-indicators li {
+  height: 2.25rem;
+  width: 2.25rem;
+  z-index: 55;
+  text-indent: 0.3125rem;
+  padding: 0.1875rem;
+  background: none;
+  left: 0;
+  opacity: 0.5;
+  display: flex;
+}
+.carousel-indicators li img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.carousel-indicators li div p {
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+.carousel-indicators li.active {
+  height: 2.25rem;
+  width: 2.25rem;
+  opacity: 1;
+}
+
+.person-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto 0;
+}
+
+.person-name {
+  font-size: 0.4375rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.person-job {
+  font-size: 0.46875rem;
+}
+
+.carousel-indicators li.active span {
+  display: inline-block;
+}
+
+.carousel-caption {
+  bottom: 5.625rem;
+}
+.carousel-caption p {
+  max-width: 55.875rem;
+  margin: 0 auto;
+  font-size: 0.9375rem;
+}
+
+.fa-quote-left {
+  font-size: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .carousel-indicators {
+    padding-bottom: 0.8333333333rem;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  }
+  .carousel-indicators li {
+    height: 3rem;
+    width: 3rem;
+    z-index: 55;
+    text-indent: 0.3125rem;
+    padding: 0.1875rem;
+    background: none;
+    left: 0;
+    opacity: 0.5;
+    display: flex;
+  }
+  .carousel-indicators li.active {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .carousel-caption {
+    bottom: 7.03125rem;
+  }
+  .carousel-caption p {
+    max-width: 55.875rem;
+    margin: 0 auto;
+    font-size: 0.9375rem;
+  }
+
+  .fa-quote-left {
+    font-size: 1.5rem;
+    margin: auto 0;
+    padding: 1rem 1rem;
+  }
+
+  .person-name {
+    font-size: 0.5833333333rem;
+  }
+
+  .person-job {
+    font-size: 0.625rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .carousel-indicators {
+    padding-bottom: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  }
+  .carousel-indicators li {
+    height: 3.75rem;
+    width: 3.75rem;
+    z-index: 55;
+    text-indent: 0.3125rem;
+    padding: 0.1875rem;
+    background: none;
+    left: 0;
+    opacity: 0.5;
+    display: flex;
+  }
+  .carousel-indicators li.active {
+    height: 3.75rem;
+    width: 3.75rem;
+  }
+
+  .carousel-caption {
+    bottom: 10.8173076923rem;
+  }
+  .carousel-caption p {
+    max-width: 55.875rem;
+    margin: 0 auto;
+    font-size: 0.9375rem;
+  }
+
+  .fa-quote-left {
+    font-size: 2rem;
+    margin: auto 0;
+    padding: 1rem 2rem;
+  }
+
+  .person-name {
+    font-size: 0.5833333333rem;
+  }
+
+  .person-job {
+    font-size: 0.625rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .carousel-indicators {
+    padding-bottom: 3.75rem;
+  }
+  .carousel-indicators li {
+    height: 4.5rem;
+    width: 4.5rem;
+  }
+  .carousel-indicators li.active {
+    height: 4.5rem;
+    width: 4.5rem;
+  }
+
+  .carousel-caption {
+    bottom: 12.5rem;
+  }
+
+  .person-name {
+    font-size: 0.875rem;
+  }
+
+  .person-job {
+    font-size: 0.9375rem;
+  }
+
+  .fa-quote-left {
+    font-size: 3rem;
+    margin: auto 0;
+    padding: 1rem 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .testimonials__header {
+    margin-top: 92px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
