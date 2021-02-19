@@ -1,78 +1,139 @@
-.footer 
+.footer
     background-color: #262829
-    min-height: 32.8125rem
-    color: #8c8385
-    +flex(null,center)
-
-// .bothside
-//     +flex(space-between,center)
-
-.footer-title
-    font-size: 15px
-    font-family: $domine-font
-    
-
-.footer-p
+    max-height: rem (525px)
+    color: #e1e1e1
+    width: 100%
+    padding: rem(95px)/2 0
+    padding-bottom: rem(56px)/2
+.right-footer
+    margin-top: rem(15px)
+.footer-top 
+    p
+        font-size: rem(15px)
+        font-family: $domineFont
+        color: #6a7172
+        max-width: 400px
+.footer__title
+    text-transform: uppercase
+    padding-top: rem(20px)
     color: white
-    font-size: 20px
+    font-size: rem(20px)
     font-weight: 700
+    margin-top: rem(15px)
 
-.left-footer
+.inputs
     position: relative
-
+.footer-input
+    width: 80%
+    height: rem(40px)
+    border-radius: rem(50px)
+    border: none
+    background-color: #323334
+    text-transform: uppercase
+    font-size: rem(13px)/1.5
+    color: white
 .footer__button
-    float: right
+    position: absolute
     color: white
     background-color: #16d428
+    font-size: rem(15px)/1.5
     border: none
     border-radius: rem(50px)
-    width: rem(155px)
-    height: rem(55px)
+    width: 30%
+    height: rem(40px)
     text-transform: uppercase
-    position: absolute
-    z-index: 1
-    right: rem(750px)
-
-.footer-input
-    text-transform: uppercase
-    width: rem(515px)
-    height: rem(55px)
-    border-radius: 50px
-    background-color: #323334
-    border: none
-    
-
-.right-footer
-    +tablet
-        .container--footer
-            display: grid
-            grid-template-columns: 50% 50%
-            gap: 2rem
-    +flex(space-between,center)
-    position: absolute
-
-
-
-+tablet
-    .container--footer
-        display: grid
-        grid-template-columns: 60% 40%
-        gap: 2rem
-
-
+    right: 0
+    top: 0
 
 
 .footer-nav
     list-style: none
-    position: absolute
-
+    text-align: center
+    padding: 0
+    margin: 0
 
 .footer-nav__item a
     font-size: rem(13px)
     text-decoration: none
-    margin: 18px 18px
+    padding: 0
     color: #8c8385
+    line-height: 1.5rem
     &:hover
         color: white
 
++phone
+    .right-footer
+        padding-left: rem(65px)/2
+        display: grid
+        grid-template-columns: repeat(3,1fr)
+    .footer-nav
+        padding: 0
+    .footer-nav__item a
+        font-size: rem(13px)/1.2
+    .footer-p
+        font-weight: 700
+    
++tablet
+    .bothside
+        +flex(space-between)
+    .footer__title
+        font-size: rem(20px)/1.4
+        font-weight: 700
+    .left-footer
+        width: 50%
+    .right-footer
+        width: 50%
+        margin-top: 0
+        .footer-nav
+            text-align: left
+            margin-right: 1rem
+            &__item
+                a
+                    font-size: rem(13px)/1.4
+            &:last-child
+                margin-right: 0
+
+
++laptop
+    .footer
+        padding: rem(95px) 0
+        padding-bottom: rem(56px)
+    .bothside
+        +flex
+    .footer-input
+        font-size: rem(13px)
+    .footer__button
+        font-size: rem(15px)
+    .footer__title
+        font-size: rem(20px)/1.2
+    .right-footer
+        padding-left: rem(65px)
+        .footer-nav__item
+            a
+                font-size: rem(13px)/1.2
+                line-height: rem(30px)/1.2
+
++desktop
+    .footer__title
+            font-size: rem(20px)
+    .right-footer
+        .footer-nav__item
+            a
+                font-size: rem(13px)
+                line-height: rem(30px)
+
+.copyright__text
+    font-size: rem(15px)
+    color: #838b8c
+    font-weight: 400
+    font-family: $domineFont
+    margin-top: rem(20px)
+
+.project__copyright
+    border-top: rem(1px) solid #313334
+    margin-top: rem(90px)/2
+
++laptop
+    .project__copyright
+        margin-top: rem(90px)
 
